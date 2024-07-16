@@ -4,6 +4,7 @@ plugins {
     alias(libs.plugins.kotlinMultiplatform)
     alias(libs.plugins.androidApplication)
     alias(libs.plugins.jetbrainsCompose)
+    alias(libs.plugins.serialization)
 }
 
 kotlin {
@@ -39,6 +40,13 @@ kotlin {
             implementation(compose.ui)
             implementation(compose.components.resources)
             implementation(compose.components.uiToolingPreview)
+            implementation(libs.jb.viewmodel)
+            implementation(libs.serialization)
+            implementation(libs.ktor.core)
+            implementation(libs.ktor.cio)
+            implementation(libs.ktor.darwin)
+            implementation(libs.ktor.negotiation)
+            implementation(libs.ktor.serialization.ktx)
         }
     }
 }
