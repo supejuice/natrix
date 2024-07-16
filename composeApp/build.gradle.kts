@@ -44,9 +44,12 @@ kotlin {
             implementation(libs.serialization)
             implementation(libs.ktor.core)
             implementation(libs.ktor.cio)
-            implementation(libs.ktor.darwin)
             implementation(libs.ktor.negotiation)
             implementation(libs.ktor.serialization.ktx)
+            implementation(libs.arrow)
+        }
+        iosMain.dependencies {
+            implementation(libs.ktor.darwin)
         }
     }
 }

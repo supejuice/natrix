@@ -4,6 +4,7 @@ import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
 import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.collectAsState
 import androidx.lifecycle.viewmodel.compose.viewModel
 import getPlatform
 
@@ -11,8 +12,9 @@ import getPlatform
 fun BoardsList() {
     val boardsRepo = getPlatform().container.boardsRepo
     val viewModel = viewModel { HomeViewModel(boardsRepo) }
+    val boards = viewModel.boards.collectAsState()
     LazyColumn {
-        items(items = viewModel.boards.value) { board ->
+        items(items = boards.value) { board ->
             BoardItem(board = board)
         }
     }

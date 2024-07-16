@@ -20,12 +20,12 @@ data class BoardsResponse(
         @SerialName("max_webm_duration") val maxWebmDuration: Int,
         @SerialName("bump_limit") val bumpLimit: Int,
         @SerialName("image_limit") val imageLimit: Int,
-        val cooldowns: List<String>, // Adjust this type according to the actual type of the `cooldowns` field
+//        val cooldowns: List<String>,
         @SerialName("meta_description") val metaDescription: String,
         val spoilers: Int? = null,
         @SerialName("custom_spoilers") val customSpoilers: Int? = null,
         @SerialName("is_archived") val isArchived: Int? = null,
-        @SerialName("board_flags") val boardFlags: List<String>? = null, // Adjust this type according to the actual type of the `board_flags` field
+//        @SerialName("board_flags") val boardFlags: List<String>? = null,
         @SerialName("country_flags") val countryFlags: Int? = null,
         @SerialName("user_ids") val userIds: Int? = null,
         val oekaki: Int? = null,

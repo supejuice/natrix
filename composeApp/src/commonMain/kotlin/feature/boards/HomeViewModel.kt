@@ -15,7 +15,8 @@ class HomeViewModel(
 
     init {
         viewModelScope.launch {
-            _boards.value = boardsRepo.getBoards()
+            val result = boardsRepo.getBoards()
+            _boards.value = result.getOrNull() ?: emptyList()
         }
     }
 }
