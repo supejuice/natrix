@@ -1,5 +1,5 @@
 import android.os.Build
-import di.AppContainer
+import core.AppContainer
 import io.ktor.client.engine.cio.CIO
 
 class AndroidPlatform : Platform {

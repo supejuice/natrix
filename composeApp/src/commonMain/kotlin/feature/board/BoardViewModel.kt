@@ -1,4 +1,4 @@
-package feature.boards
+package feature.board
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
@@ -6,7 +6,7 @@ import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.launch
 
-class HomeViewModel(
+class BoardViewModel(
     private val boardsRepo: BoardsRepo
 ) : ViewModel() {
 

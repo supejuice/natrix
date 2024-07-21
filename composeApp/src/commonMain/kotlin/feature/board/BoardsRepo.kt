@@ -1,4 +1,4 @@
-package feature.boards
+package feature.board
 
 import io.ktor.client.HttpClient
 import io.ktor.client.call.body

@@ -1,5 +1,3 @@
-import org.jetbrains.compose.desktop.application.dsl.TargetFormat
-
 plugins {
     alias(libs.plugins.kotlinMultiplatform)
     alias(libs.plugins.androidApplication)
@@ -47,6 +45,7 @@ kotlin {
             implementation(libs.ktor.negotiation)
             implementation(libs.ktor.serialization.ktx)
             implementation(libs.arrow)
+            implementation(libs.navigation)
         }
         iosMain.dependencies {
             implementation(libs.ktor.darwin)

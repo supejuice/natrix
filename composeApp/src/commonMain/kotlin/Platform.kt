@@ -1,4 +1,4 @@
-import di.AppContainer
+import core.AppContainer
 
 interface Platform {
     val name: String

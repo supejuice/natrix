@@ -1,4 +1,4 @@
-package feature.boards
+package feature.board
 
 import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable

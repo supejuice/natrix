@@ -1,15 +1,12 @@
-package di
+package core
 
-import feature.boards.BoardsRepo
-import feature.boards.BoardsRepoImpl
+import feature.board.BoardsRepo
+import feature.board.BoardsRepoImpl
 import io.ktor.client.HttpClient
 import io.ktor.client.engine.HttpClientEngineFactory
 import io.ktor.client.plugins.HttpResponseValidator
 import io.ktor.client.plugins.contentnegotiation.ContentNegotiation
 import io.ktor.serialization.kotlinx.json.json
-import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.IO
-import kotlinx.coroutines.handleCoroutineException
 import kotlinx.serialization.json.Json
 
 class AppContainer(private val httpEngine: HttpClientEngineFactory<*>) {

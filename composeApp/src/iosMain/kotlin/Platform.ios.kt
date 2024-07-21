@@ -1,6 +1,6 @@
-import di.AppContainer
+import core.AppContainer
+import io.ktor.client.engine.darwin.Darwin
 import platform.UIKit.UIDevice
-import io.ktor.client.engine.darwin.*
 
 class IOSPlatform: Platform {
     override val name: String = UIDevice.currentDevice.systemName() + " " + UIDevice.currentDevice.systemVersion
