@@ -1,6 +1,6 @@
-import androidx.compose.material.MaterialTheme
-import androidx.compose.material.Scaffold
+import androidx.compose.material3.Scaffold
 import androidx.compose.runtime.Composable
+import com.example.compose.AppTheme
 import navigation.NavHost
 import org.jetbrains.compose.resources.ExperimentalResourceApi
 import org.jetbrains.compose.ui.tooling.preview.Preview
@@ -9,7 +9,7 @@ import org.jetbrains.compose.ui.tooling.preview.Preview
 @Composable
 @Preview
 fun App() {
-    MaterialTheme {
+    AppTheme {
         Scaffold(
             bottomBar = { },
             content = { paddingValues ->
