@@ -6,3 +6,4 @@ interface Platform {
 }
 
 expect fun getPlatform(): Platform
+fun getContainer() = getPlatform().container

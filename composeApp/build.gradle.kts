@@ -44,7 +44,6 @@ kotlin {
             implementation(libs.ktor.cio)
             implementation(libs.ktor.negotiation)
             implementation(libs.ktor.serialization.ktx)
-            implementation(libs.arrow)
             implementation(libs.navigation)
         }
         iosMain.dependencies {
